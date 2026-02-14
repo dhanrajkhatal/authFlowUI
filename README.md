@@ -11,3 +11,18 @@
    - tailwind
    - typescript 
    - axios
+
+**Auth flow**
+
+User Login
+   ↓
+Access Token → React memory
+Refresh Token → HTTP-only cookie
+   ↓
+API call
+   ↓
+401?
+   ↓
+Call /refresh
+   ↓
+Get new access token
